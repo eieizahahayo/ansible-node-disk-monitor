@@ -1,0 +1,14 @@
+- name: "Copy disk-monitor-test.sh "
+  template:
+    src: disk-monitor.sh
+    dest: /opt/data/monitor/node-exporter
+
+- name: "Copy disk-monitor-cron"
+  copy:
+    src: disk-monitor-cron
+    dest: /etc/cron.d
+
+- name: "Change modify disk-monitor-test.sh"
+  shell: chmod +x disk-monitor.sh
+  args:
+    chdir: /opt/data/monitor/node-exporter

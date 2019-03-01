@@ -1,0 +1,1 @@
+* * * * * root su -c "/opt/data/monitor/node-exporter/disk-monitor-test.sh" 

@@ -1,0 +1,5 @@
+[home]
+127.0.0.1
+[home:vars]
+USER=root
+DESTINATION=127.0.0.1
